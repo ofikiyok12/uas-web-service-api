@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\MatkulController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,7 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/task','App\Http\Controllers\ProductController@index');
+Route::get('/task','App\Http\Controllers\MatkulController@ambil');
 // Route::get('products/create', [ProductController::class, 'create'])->name('products.create');
 // Route::post('products', [ProductController::class, 'store'])->name('products.store');
 // Route::get('products/{id}/edit', [ProductController::class, 'edit'])->name('products.edit');
