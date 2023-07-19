@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('nilai', function (Blueprint $table) {
             $table->increments('id')-> unique();
-            $table->string('id_mhs',10);
-            $table->string('id_mt_kuliah',10);
+            $table->string('id_mahasiswa',10);
+            $table->string('id_matakuliah',10);
             $table->string('id_dosen',10);
             $table->string('nilai',10);
             $table->timestamps();
